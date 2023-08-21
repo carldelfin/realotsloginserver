@@ -18,10 +18,10 @@
  */
 
 #include "otpch.h"
-
 #include "iologindata.h"
 #include "configmanager.h"
 #include "tools.h"
+#include "sha256.h"
 
 extern ConfigManager g_config;
 
@@ -62,7 +62,7 @@ bool IOLoginData::loginserverAuthentication(const uint32_t accountNumber, const 
 	}
 
 	//plain
-	if (password != result->getString("passwd")) {
+	if (sha256(password) != result->getString("passwd")) {
 		return false;
 	}
 

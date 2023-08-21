@@ -1,4 +1,4 @@
-set(tfls_SRC
+﻿set(tfls_SRC
 	${CMAKE_CURRENT_LIST_DIR}/ban.cpp
 	${CMAKE_CURRENT_LIST_DIR}/configmanager.cpp
 	${CMAKE_CURRENT_LIST_DIR}/connection.cpp
@@ -21,5 +21,6 @@ set(tfls_SRC
 	${CMAKE_CURRENT_LIST_DIR}/tasks.cpp
 	${CMAKE_CURRENT_LIST_DIR}/tools.cpp
 	${CMAKE_CURRENT_LIST_DIR}/wildcardtree.cpp
+      ${CMAKE_CURRENT_LIST_DIR}/sha256.cpp
 )
 

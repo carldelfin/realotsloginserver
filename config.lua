@@ -1,4 +1,4 @@
-serverName = "Forgotten"
+serverName = ""
 
 -- Connection Config
 ip = "127.0.0.1"
@@ -9,13 +9,13 @@ statusTimeout = 5000
 maxPacketsPerSecond = 25
 
 --motd
-motd = "Welcome to RealOts"
+motd = ""
 motdNum = 0
 
 --version
-clientVersionMin = 772
-clientVersionMax = 772
-clientVersionStr = "7.72"
+clientVersionMin = 770
+clientVersionMax = 770
+clientVersionStr = "7.70"
 
 --amounts
 maxPlayers = 0
@@ -23,16 +23,16 @@ monsterCount = 0
 npcCount = 0
 
 -- Map
-mapName = "forgotten"
-mapAuthor = "Komic"
+mapName = ""
+mapAuthor = ""
 mapWidth = 0
 mapHeight = 0
 
 -- Status server information
 ownerName = ""
 ownerEmail = ""
-url = "https://otland.net/"
-location = "Sweden"
+url = ""
+location = ""
 
 --rates
 rateExp = 5
@@ -43,14 +43,14 @@ rateSpawn = 1
 
 -- MySQL
 mysqlHost = "127.0.0.1"
-mysqlUser = "root"
-mysqlPass = ""
-mysqlDatabase = "otserv"
+mysqlUser = os.getenv("MYSQL_NAME")
+mysqlPass = os.getenv("MYSQL_PASSWORD")
+mysqlDatabase = os.getenv("MYSQL_NAME")
 mysqlPort = 3306
 mysqlSock = ""
 
 -- Misc.
-freePremium = false
+freePremium = true 
 
 -- Startup
 -- NOTE: defaultPriority only works on Windows and sets process
